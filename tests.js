@@ -333,7 +333,7 @@ $(function () {
       return true;
     }
 
-    ok ( fn() , "this should return true" );
+    ok ( fn() === true , "fn should return true" );
 
   });
 
@@ -344,11 +344,11 @@ $(function () {
 
     expect(4);
 
-    var value = 0;
+    var value = 4;
 
     function fn () {
 
-      while (value--) {
+      while (--value) {
         ok ( true , "this should be called 3 times" );
       }
 
