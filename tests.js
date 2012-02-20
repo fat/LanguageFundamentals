@@ -359,7 +359,7 @@ $(function () {
     }
 
     for (var i in object) {
-      ok ( true, "this hsould be called 1 time" );
+      ok ( true, "this should be called 1 time" );
     }
 
   });
