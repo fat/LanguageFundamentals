@@ -334,7 +334,7 @@ $(function () {
 
     function fn () {
 
-      while (value--) {
+      while (--value) {
         ok ( true , "this should be called 3 times" );
       }
 
