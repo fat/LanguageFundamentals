@@ -621,7 +621,7 @@ $(function () {
   });
 
 
-  test( "function recursion", function () { /* replace result with truthy or falsey */
+  test( "function recursion", function () {
 
     expect(1);
 
