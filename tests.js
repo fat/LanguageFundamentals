@@ -712,15 +712,18 @@ $(function () {
     var value = 0;
     var result;
 
-    function fn (array, fn) {
+    function fn (array) {
       array.pop();
       value++;
-      fn(array);
+      if (array.length) {
+        fn(array);
+      }
     }
 
     fn([1, 2, 3, 4]);
 
     ok ( value == result , "correct result specified" );
+
 
   });
 
