@@ -315,11 +315,11 @@ $(function () {
 
   test( "function", function () {
 
-    expect(3);
+    expect(1);
 
     function fn () {}
 
-    ok ( fn() , "this should be called 3 times" );
+    ok ( fn() === true , "fn should return true" );
 
   });
 
