@@ -89,7 +89,9 @@ $(function () {
 
     expect(4);
 
-    var fn;
+    var fn = function () {
+      return arguments[0] || 0;
+    };
 
     ok ( fn instanceof Function , "is a function" );
     ok ( fn()  === 0            , "returns 0"     );
@@ -105,9 +107,9 @@ $(function () {
 
     expect(3);
 
-    var number;
+    var number = 5;
 
-    ok ( typeof number == "Number" , "is a number" );
+    ok ( typeof number == "number" , "is a number" );
     ok ( number                    , "is truthy"   );
     ok ( (number + 5) == 10        , "+5 is 10"    );
 
