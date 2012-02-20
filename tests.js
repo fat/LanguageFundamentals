@@ -836,7 +836,8 @@ $(function () {
 
     var result;
     var object = {};
-    object.string = "new property";
+
+    object.string = "value";
     object.number = 3;
 
     ok ( JSON.stringify(object) == result , "JSON stringified" );
