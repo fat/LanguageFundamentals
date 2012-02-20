@@ -77,8 +77,8 @@ $(function () {
     var year;
 
     ok ( date instanceof Date , "is a date"  );
-    ok ( month == "Feb"       , "is a month" );
-    ok ( year  == 2012        , "is a year"  );
+    ok ( month == 1           , "is february" );
+    ok ( year  == 2012        , "is 2012"     );
 
   });
 
