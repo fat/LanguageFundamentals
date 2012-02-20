@@ -732,12 +732,14 @@ $(function () {
     expect(1);
 
     var value = 0;
-    var result;
+    var result = 4;
 
-    function fn (array, fn) {
+    function fn (array) {
       array.pop();
       value++;
-      fn(array);
+      if (array.length) {
+        fn(array);
+      }
     }
 
     fn([1, 2, 3, 4]);
