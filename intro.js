@@ -83,7 +83,7 @@ $(function () {
   });
 
 
-  // define a Function which satisfies the following tests.
+  // Define a Function which satisfies the following tests.
 
   test( "Function", function () {
 
@@ -190,7 +190,7 @@ $(function () {
   });
 
 
-  // modify the expression value and/or add break statements to
+  // Modify the expression value and/or add break statements to
   // satisfy the following test.
 
   test( "switch/case/default", function () {
@@ -293,7 +293,7 @@ $(function () {
   });
 
 
-  // use a return statement to satifiy the following tests.
+  // Use a return statement to satifiy the following tests.
 
   test( "return", function () {
 
@@ -365,7 +365,7 @@ $(function () {
   });
 
 
-  // use `with` to satisify the following test.
+  // Use `with` to satisify the following test.
 
   test( "with", function () {
 
