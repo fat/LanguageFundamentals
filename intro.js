@@ -38,11 +38,11 @@ $(function () {
 
     var array;
 
-    ok ( array instanceof Array , "is an array" );
-    ok ( array[0] === "cool"    , "first value is cool" );
-    ok ( array[1] === "story"   , "second value is story" );
-    ok ( array[1] === "bro"     , "third value is bro" );
-    ok ( array.length == 3      , "three items in the array" )
+    ok ( array instanceof Array , "is an array"              );
+    ok ( array[0] === "cool"    , "first value is cool"      );
+    ok ( array[1] === "story"   , "second value is story"    );
+    ok ( array[1] === "bro"     , "third value is bro"       );
+    ok ( array.length == 3      , "three items in the array" );
 
   });
 
@@ -53,10 +53,10 @@ $(function () {
 
     var bool;
 
-    ok ( bool instanceof Boolean , "is a boolean" );
-    ok ( bool                    , "boolean is truthy" );
+    ok ( bool instanceof Boolean , "is a boolean"            );
+    ok ( bool                    , "boolean is truthy"       );
     ok ( bool == true            , "boolean is still truthy" );
-    ok ( bool === true           , "boolean is true." );
+    ok ( bool === true           , "boolean is true."        );
 
   });
 
@@ -69,9 +69,9 @@ $(function () {
     var month;
     var year;
 
-    ok ( date instanceof Date , "is a date" );
-    ok ( month == "Feb"       , "is a month");
-    ok ( year  == 2012        , "is a year");
+    ok ( date instanceof Date , "is a date"  );
+    ok ( month == "Feb"       , "is a month" );
+    ok ( year  == 2012        , "is a year"  );
 
   });
 
@@ -83,9 +83,9 @@ $(function () {
     var fn;
 
     ok ( fn instanceof Function , "is a function" );
-    ok ( fn()  === 0            , "returns 0");
-    ok ( fn(2) === 2            , "returns 2");
-    ok ( fn(4) === 4            , "returns 4");
+    ok ( fn()  === 0            , "returns 0"     );
+    ok ( fn(2) === 2            , "returns 2"     );
+    ok ( fn(4) === 4            , "returns 4"     );
 
   });
 
@@ -97,8 +97,8 @@ $(function () {
     var number;
 
     ok ( typeof number == "Number" , "is a number" );
-    ok ( number                    , "is truthy" );
-    ok ( (number + 5) == 10        , "+5 is 10" );
+    ok ( number                    , "is truthy"   );
+    ok ( (number + 5) == 10        , "+5 is 10"    );
 
   });
 
@@ -109,7 +109,7 @@ $(function () {
 
     var object;
 
-    ok ( typeof object == "Object" , "is an object" );
+    ok ( typeof object == "Object" , "is an object"              );
     ok ( "property" in object      , "has a property 'property'" );
 
   });
@@ -121,9 +121,9 @@ $(function () {
 
     var regexp;
 
-    ok ( regexp instanceof RegExp           , "is a regular expression" );
-    ok ( regexp.test("I <3 javascript")     , "matches i <3 javascript" );
-    ok ( regexp.test("I <3 fat")            , "matches i <3 fat" );
+    ok ( regexp instanceof RegExp           , "is a regular expression"     );
+    ok ( regexp.test("I <3 javascript")     , "matches i <3 javascript"     );
+    ok ( regexp.test("I <3 fat")            , "matches i <3 fat"            );
     ok ( regexp.test("I <3 all the things") , "matches i <3 all the things" );
 
   });
@@ -134,7 +134,7 @@ $(function () {
 
     var string;
 
-    ok ( typeof string == "string" , "is a string" );
+    ok ( typeof string == "string" , "is a string"             );
     ok ( string === "(O_O )"       , "matches i <3 javascript" );
 
   });
@@ -345,12 +345,12 @@ $(function () {
     var type7 = "";
 
     ok ( typeof undefined      == type1 , "typeof undefined" );
-    ok ( typeof null           == type2 , "typeof null" )
-    ok ( typeof true           == type3 , "typeof true" );
-    ok ( typeof 2              == type4 , "typeof number" );
-    ok ( typeof "string"       == type5 , "typeof string" );
-    ok ( typeof function () {} == type6 , "typeof function" );
-    ok ( typeof { fat: 1 }     == type7 , "typeof function" );
+    ok ( typeof null           == type2 , "typeof null"      );
+    ok ( typeof true           == type3 , "typeof true"      );
+    ok ( typeof 2              == type4 , "typeof number"    );
+    ok ( typeof "string"       == type5 , "typeof string"    );
+    ok ( typeof function () {} == type6 , "typeof function"  );
+    ok ( typeof { fat: 1 }     == type7 , "typeof function"  );
 
   });
 
@@ -730,6 +730,7 @@ $(function () {
 
   module("JSON");
 
+
   test( "stringify", function () {
 
     expect(1);
@@ -743,6 +744,7 @@ $(function () {
 
   });
 
+
   test( "toJSON", function () {
 
     expect(1);
@@ -754,6 +756,7 @@ $(function () {
     ok ( JSON.stringify(object) == result , "JSON stringified with toJSON" );
   });
 
+
   test( "parse", function () {
 
     expect(1);
@@ -764,6 +767,5 @@ $(function () {
     ok ( JSON.parse(json)["property"] == result , "JSON parsed" );
 
   });
-
 
 });
