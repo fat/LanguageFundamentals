@@ -123,9 +123,11 @@ $(function () {
 
     expect(2);
 
-    var object;
+    var object = {
+      property: 'value'
+    };
 
-    ok ( typeof object == "Object" , "is an object"              );
+    ok ( typeof object == "object" , "is an object"              );
     ok ( "property" in object      , "has a property 'property'" );
 
   });
