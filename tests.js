@@ -664,7 +664,7 @@ $(function () {
 
     expect(1);
 
-    var result;
+    var result = 5;
 
     function fn (argument1, argument2) {
       ok ( arguments.length == result , "correct argument length" );
@@ -682,7 +682,7 @@ $(function () {
     expect(1);
 
     var value = 0;
-    var result;
+    var result = 2;
 
     function fn (argument1, argument2) {
       value = 1;
@@ -708,7 +708,7 @@ $(function () {
     expect(1);
 
     var value = 0;
-    var result;
+    var result = 6;
 
     function each (array, fn) {
       for (var i = 0, l = array.length; i < l; i++) {
@@ -717,7 +717,7 @@ $(function () {
     }
 
     each([1, 2, 3], function (item) {
-      value = value * item;
+      value = value + item;
     });
 
     ok ( value == result , "correct result specified" );
