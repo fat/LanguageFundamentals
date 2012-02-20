@@ -597,7 +597,8 @@ $(function () {
   // Define result as eiher truthy or falsey for each test.
   //
   // NOTE: You'll need to redefine result several times
-  //       throughout this test.
+  //       throughout this test or replace result with
+  //       appropriate variable.
 
   test( "truthy/falsey", function () {
 
