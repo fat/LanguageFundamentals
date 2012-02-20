@@ -43,7 +43,7 @@ $(function () {
     ok ( array instanceof Array , "is an array"              );
     ok ( array[0] === "cool"    , "first value is cool"      );
     ok ( array[1] === "story"   , "second value is story"    );
-    ok ( array[1] === "bro"     , "third value is bro"       );
+    ok ( array[2] === "bro"     , "third value is bro"       );
     ok ( array.length == 3      , "three items in the array" );
 
   });
