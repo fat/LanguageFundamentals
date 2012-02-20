@@ -612,11 +612,11 @@ $(function () {
     ok ( ""        == result , "is truthy/falsey" );
     ok ( false     == result , "is truthy/falsey" );
     ok ( 1         == result , "is truthy/falsey" );
-    ok ( -1        == result , "is truthy/falsey" );
-    ok ( "false"   == result , "is truthy/falsey" );
     ok ( true      == result , "is truthy/falsey" );
     ok ( (!"")     == result , "is truthy/falsey" );
     ok ( (!0)      == result , "is truthy/falsey" );
+    ok ( !!-1      == result , "is truthy/falsey" );
+    ok ( !!"false" == result , "is truthy/falsey" );
     ok ( (!!false) == result , "is truthy/falsey" );
     ok ( (!!+Date) == result , "is truthy/falsey" );
     ok ( (!~-1)    == result , "is truthy/falsey" );
