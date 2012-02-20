@@ -123,7 +123,7 @@ $(function () {
 
     var object;
 
-    ok ( typeof object == "Object" , "is an object"              );
+    ok ( typeof object == "object" , "is an object"              );
     ok ( "property" in object      , "has a property 'property'" );
 
   });
