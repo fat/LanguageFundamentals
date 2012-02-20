@@ -624,24 +624,24 @@ $(function () {
 
   test( "truthy/falsey", function () {
 
-    expect(4);
+    expect(12);
 
     var truthy = true;
     var falsey = false;
     var result;
 
     ok ( 0         == falsey , "is truthy/falsey" );
-    ok ( ""        == result , "is truthy/falsey" );
-    ok ( false     == result , "is truthy/falsey" );
-    ok ( 1         == result , "is truthy/falsey" );
-    ok ( -1        == result , "is truthy/falsey" );
-    ok ( "false"   == result , "is truthy/falsey" );
-    ok ( true      == result , "is truthy/falsey" );
-    ok ( (!"")     == result , "is truthy/falsey" );
-    ok ( (!0)      == result , "is truthy/falsey" );
-    ok ( (!!false) == result , "is truthy/falsey" );
-    ok ( (!!+Date) == result , "is truthy/falsey" );
-    ok ( (!~-1)    == result , "is truthy/falsey" );
+    ok ( ""        == falsey , "is truthy/falsey" );
+    ok ( false     == falsey , "is truthy/falsey" );
+    ok ( 1         == truthy , "is truthy/falsey" );
+    ok ( true      == truthy , "is truthy/falsey" );
+    ok ( (!"")     == truthy , "is truthy/falsey" );
+    ok ( (!0)      == truthy , "is truthy/falsey" );
+    ok ( !!-1      == truthy , "is truthy/falsey" );
+    ok ( !!"false" == truthy , "is truthy/falsey" );
+    ok ( (!!false) == falsey , "is truthy/falsey" );
+    ok ( (!!+Date) == falsey , "is truthy/falsey" );
+    ok ( (!~-1)    == truthy , "is truthy/falsey" );
 
   });
 
