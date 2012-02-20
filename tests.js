@@ -695,7 +695,7 @@ $(function () {
     }
 
     each([1, 2, 3], function (item) {
-      value = value * item;
+      value = value + item;
     });
 
     ok ( value == result , "correct result specified" );
