@@ -153,8 +153,8 @@ $(function () {
 
     var string;
 
-    ok ( typeof string == "string" , "is a string"             );
-    ok ( string === "(O_O )"       , "matches i <3 javascript" );
+    ok ( typeof string == "string" , "is a string"     );
+    ok ( string === "(O_O )"       , "matches (O_O  )" );
 
   });
 
