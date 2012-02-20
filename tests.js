@@ -892,7 +892,7 @@ $(function () {
 
     expect(1);
 
-    var result;
+    var result = "value";
     var json = '{"property":"value"}';
 
     ok ( JSON.parse(json)["property"] == result , "JSON parsed" );
