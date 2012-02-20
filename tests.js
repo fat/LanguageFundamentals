@@ -372,6 +372,8 @@ $(function () {
       property2: "value"
     }
 
+    delete object.property1
+
     for (var i in object) {
       ok ( true, "this should be called 1 time" );
     }
@@ -390,7 +392,9 @@ $(function () {
       property2: "value"
     }
 
-    ok ( property1 === property2 , "the object's property was deleted" );
+    with (object) {
+      ok ( property1 === property2 , "the object's property was deleted" );
+    }
 
   });
 
@@ -401,19 +405,19 @@ $(function () {
 
     expect(7);
 
-    var type1 = "";
-    var type2 = "";
-    var type3 = "";
-    var type4 = "";
-    var type5 = "";
-    var type6 = "";
-    var type7 = "";
+    var type1 = "undefined";
+    var type2 = "object";
+    var type3 = "boolean";
+    var type4 = "number";
+    var type5 = "string";
+    var type6 = "function";
+    var type7 = "object";
 
     ok ( typeof undefined      == type1 , "typeof undefined" );
     ok ( typeof null           == type2 , "typeof null"      );
     ok ( typeof true           == type3 , "typeof true"      );
     ok ( typeof 2              == type4 , "typeof number"    );
-    ok ( typeof "string"       == type5 , "typeof string"    );
+    ok ( typeof "@fat"         == type5 , "typeof string"    );
     ok ( typeof function () {} == type6 , "typeof function"  );
     ok ( typeof { fat: 1 }     == type7 , "typeof function"  );
 
@@ -432,6 +436,8 @@ $(function () {
       ok (this == that, "this == that" );
     }
 
+    fn.apply(that);
+
   });
 
 
@@ -441,8 +447,8 @@ $(function () {
 
     expect(2);
 
-    var fn1;
-    var fn2;
+    var fn1 = new Fn(1);
+    var fn2 = new Fn(2);
 
     function Fn (argument) {
       this.value = argument
@@ -460,13 +466,13 @@ $(function () {
 
     expect(3);
 
-    var value1;
-    var value2;
-    var value3;
+    var value1 = [];
+    var value2 = [];
+    var value3 = /fat/;
 
     ok( value1 instanceof Array  , "instance of array"  );
     ok( value2 instanceof Object , "instance of object" );
-    ok( value3 instanceof Number , "instance of RegExp" );
+    ok( value3 instanceof RegExp , "instance of RegExp" );
 
   });
 
