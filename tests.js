@@ -875,11 +875,14 @@ $(function () {
 
     expect(1);
 
+    var result = '"@fat"';
     var object = {};
-    object.string = "new property";
-    object.toJSON = function () { return "bar"; };
+
+    object.string = "value";
+    object.toJSON = function () { return "@fat"; };
 
     ok ( JSON.stringify(object) == result , "JSON stringified with toJSON" );
+
   });
 
 
