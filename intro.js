@@ -570,7 +570,7 @@ $(function () {
       ok ( arguments.length == result , "correct argument length" );
     }
 
-    fn(1,2,3,4,5);
+    fn(1, 2, 3, 4, 5);
 
   });
 
