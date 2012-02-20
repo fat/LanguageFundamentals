@@ -755,10 +755,9 @@ $(function () {
 
   test( "closures", function () {
 
-    expect(1);
+    expect(3);
 
     var result;
-    var name;
 
     function person () {
 
@@ -768,6 +767,7 @@ $(function () {
 
         setName: function (string) {
           name = string;
+          return this;
         },
 
         getName: function () {
@@ -783,6 +783,8 @@ $(function () {
 
     var jacob = person().setName("@fat")
     ok ( jacob.getName() == result , "correct result specified" );
+
+    ok ( wayne.getName() == result , "correct result specified" );
 
   });
 
