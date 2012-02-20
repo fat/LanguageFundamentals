@@ -12,7 +12,7 @@
 //
 //
 // An introduction to the language of JavaScript by way of vague
-// recollections and hasty (not thorough or detailed) failing unit tests.
+// recollections and hasty (not thorough or detailed) unit tests.
 //
 // <3 @fat, a class taught in 2012
 //
