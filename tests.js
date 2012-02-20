@@ -452,7 +452,7 @@ $(function () {
 
     ok( value1 instanceof Array  , "instance of array"  );
     ok( value2 instanceof Object , "instance of object" );
-    ok( value3 instanceof Number , "instance of RegExp" );
+    ok( value3 instanceof RegExp , "instance of RegExp" );
 
   });
 
