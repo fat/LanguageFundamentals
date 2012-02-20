@@ -139,7 +139,7 @@ $(function () {
 
     expect(4);
 
-    var regexp;
+    var regexp = /I\s<3/;
 
     ok ( regexp instanceof RegExp           , "is a regular expression"     );
     ok ( regexp.test("I <3 javascript")     , "matches i <3 javascript"     );
@@ -155,7 +155,7 @@ $(function () {
 
     expect(2);
 
-    var string;
+    var string = "(O_O )";
 
     ok ( typeof string == "string" , "is a string"     );
     ok ( string === "(O_O )"       , "matches (O_O  )" );
@@ -183,7 +183,7 @@ $(function () {
 
     expect(1);
 
-    var condition = true;
+    var condition = false;
 
     if (condition) {
        ok( false , "this should not be called" );
@@ -201,18 +201,18 @@ $(function () {
 
     expect(1);
 
-    var expression = "";
+    var expression = "label2";
     var value = 0;
 
     switch (expression) {
 
-      case label1:
+      case "label1":
         value = value + 1;
 
-      case label2:
+      case "label2":
         value = value + 1;
 
-      case label3:
+      case "label3":
         value = value + 1;
 
       default:
