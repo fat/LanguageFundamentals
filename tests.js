@@ -372,7 +372,7 @@ $(function () {
       property2: "value"
     }
 
-    delete object.property1
+    delete object.property1;
 
     for (var i in object) {
       ok ( true, "this should be called 1 time" );
@@ -451,7 +451,7 @@ $(function () {
     var fn2 = new Fn(2);
 
     function Fn (argument) {
-      this.value = argument
+      this.value = argument;
     }
 
     ok ( fn1.value == 1, "different instances" );
@@ -483,7 +483,9 @@ $(function () {
 
     expect(1);
 
-    var object = {};
+    var object = {
+      property: 'value'
+    };
 
     ok ( "property" in object , "the object's property was declared" );
 
@@ -508,7 +510,7 @@ $(function () {
     expect(1);
 
     var value = 0;
-    var result = false;
+    var result = 4;
 
     if (true) {
       value = 2;
@@ -544,7 +546,7 @@ $(function () {
 
       !function () {
         value = 4;
-      }
+      }();
 
     }
 
