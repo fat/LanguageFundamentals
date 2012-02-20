@@ -524,7 +524,7 @@ $(function () {
 
       !function () {
         value = 4;
-      }
+      }();
 
     }
 
