@@ -32,6 +32,8 @@ $(function () {
   module("Standards");
 
 
+  // Define an array to satisify the following tests.
+
   test( "Array", function () {
 
     expect(5);
@@ -47,6 +49,8 @@ $(function () {
   });
 
 
+  // Define a Boolean to satisify the following tests.
+
   test( "Boolean", function () {
 
     expect(4);
@@ -60,6 +64,9 @@ $(function () {
 
   });
 
+
+  // Define a Date to satisify the following tests. Use the available
+  // Date methods to also define a month and year.
 
   test( "Date", function () {
 
@@ -76,6 +83,8 @@ $(function () {
   });
 
 
+  // define a Function which satisfies the following tests.
+
   test( "Function", function () {
 
     expect(4);
@@ -90,6 +99,8 @@ $(function () {
   });
 
 
+  // Define a Number which satisifes the following tests.
+
   test( "Number", function () {
 
     expect(3);
@@ -103,6 +114,9 @@ $(function () {
   });
 
 
+  // Define an Object Literal which the appropriate properties
+  // to satisfy the following tests.
+
   test( "Object", function () {
 
     expect(2);
@@ -114,6 +128,8 @@ $(function () {
 
   });
 
+
+  // Define a RegExp to satsify the following tests.
 
   test( "RegExp", function () {
 
@@ -127,6 +143,9 @@ $(function () {
     ok ( regexp.test("I <3 all the things") , "matches i <3 all the things" );
 
   });
+
+
+  // Define a string which satisfies the following tests.
 
   test( "String", function () {
 
@@ -154,6 +173,9 @@ $(function () {
   module("Keywords");
 
 
+
+  // Modify the condition variable to satisfy the following test.
+
   test( "if/else", function () {
 
     expect(1);
@@ -168,6 +190,9 @@ $(function () {
 
   });
 
+
+  // modify the expression value and/or add break statements to
+  // satisfy the following test.
 
   test( "switch/case/default", function () {
 
@@ -195,6 +220,8 @@ $(function () {
   });
 
 
+  // Modify the array variable to satisify the following test.
+
   test( "for", function () {
 
     expect(4);
@@ -208,18 +235,27 @@ $(function () {
   });
 
 
+  // Modify the value variable to satisfiy the following test.
+  // Watch out for inifinte loops!
+
   test( "while/do", function () {
 
     expect(4);
 
     var value = 0;
 
-    while (value) {
+    while (value && value--) {
       ok ( true , "this should be called 4 times" );
     }
 
   });
 
+
+  // Modify the array variable and condition variable to
+  // satisfy the following test.
+  //
+  // Note: you'll likely need to toggle the condition value
+  //       inside the for loop.
 
   test( "break/continue", function () {
 
@@ -239,10 +275,13 @@ $(function () {
       }
 
       ok ( true , "this should be called 4 times" );
+
     }
 
   });
 
+
+  // Use a try catch to satisfy the following test.
 
   test( "throw/try/catch/finally", function () {
 
@@ -254,6 +293,8 @@ $(function () {
 
   });
 
+
+  // use a return statement to satifiy the following tests.
 
   test( "return", function () {
 
@@ -270,16 +311,21 @@ $(function () {
 
   });
 
+
+  // Write a function which satisfies the following test.
+
   test( "function", function () {
 
     expect(3);
 
-    function fn ( argument ) {
-      ok ( true , "this should be called 3 times" );
-    }
+    function fn () {}
+
+    ok ( fn() , "this should be called 3 times" );
 
   });
 
+
+  // Modify the value variable to satisfy the following tests.
 
   test( "var", function () {
 
@@ -302,6 +348,8 @@ $(function () {
   });
 
 
+  // Use the `delete` keyword to satisfy the following test.
+
   test( "delete", function () {
 
     expect(1);
@@ -318,6 +366,8 @@ $(function () {
   });
 
 
+  // use `with` to satisify the following test.
+
   test( "with", function () {
 
     expect(1);
@@ -331,6 +381,8 @@ $(function () {
 
   });
 
+
+  // Define the following typeN variables to satify the following tests.
 
   test( "typeof", function () {
 
@@ -355,7 +407,9 @@ $(function () {
   });
 
 
-  test( "this", function () { /* hint: call/apply */
+  // Use call/apply to satisfy the following test.
+
+  test( "this", function () {
 
     expect(1);
 
@@ -367,6 +421,8 @@ $(function () {
 
   });
 
+
+  // Use the `new` keyword to satisfy the following test.
 
   test( "new", function () {
 
@@ -385,6 +441,8 @@ $(function () {
   });
 
 
+  // Provide valueN to satisfy the following tests.
+
   test( "instanceof", function () {
 
     expect(3);
@@ -399,6 +457,8 @@ $(function () {
 
   });
 
+
+  // Modify object to satisify the following test.
 
   test( "in", function () {
 
@@ -422,6 +482,8 @@ $(function () {
   module("Var");
 
 
+  // Provide the expected result in the result variable.
+
   test( "simple", function () {
 
     expect(1);
@@ -443,6 +505,8 @@ $(function () {
 
   });
 
+
+  // Provide the expected result in the result variable.
 
   test( "scope", function () {
 
@@ -472,6 +536,8 @@ $(function () {
   });
 
 
+  // Provide the expected result in the result variable.
+
   test( "simple hoisting", function () {
 
     expect(1);
@@ -493,6 +559,8 @@ $(function () {
 
   });
 
+
+  // Provide the expected result in the result variable.
 
   test( "hoisting wtf", function () {
 
@@ -527,6 +595,11 @@ $(function () {
   module("truthy/falsey");
 
 
+  // Define result as eiher truthy or falsey for each test.
+  //
+  // NOTE: You'll need to redefine result several times
+  //       throughout this test.
+
   test( "truthy/falsey", function () {
 
     expect(4);
@@ -560,6 +633,8 @@ $(function () {
   // JS Functions, Closures, and Blocks
 
 
+  // Provide the expected result in the result variable.
+
   test( "function arguments", function () {
 
     expect(1);
@@ -574,6 +649,8 @@ $(function () {
 
   });
 
+
+  // Provide the expected result in the result variable.
 
   test( "conditional function definition", function () {
 
@@ -599,6 +676,8 @@ $(function () {
   });
 
 
+  // Provide the expected result in the result variable.
+
   test( "function expressions", function () {
 
     expect(1);
@@ -621,6 +700,8 @@ $(function () {
   });
 
 
+  // Provide the expected result in the result variable.
+
   test( "function recursion", function () {
 
     expect(1);
@@ -640,6 +721,9 @@ $(function () {
 
   });
 
+
+  // Provide the expected result in the result variable.
+
   test( "function scope", function () {
 
     expect(1);
@@ -657,6 +741,11 @@ $(function () {
 
   });
 
+
+  // Provide the expected result in the result variable.
+  //
+  // NOTE: You'll need to redefine result several times
+  //       throughout this test.
 
   test( "closures", function () {
 
@@ -684,15 +773,15 @@ $(function () {
     }
 
     var wayne = person().setName("@liltunechi")
-
     ok ( wayne.getName() == result , "correct result specified" );
 
     var jacob = person().setName("@fat")
-
     ok ( jacob.getName() == result , "correct result specified" );
 
   });
 
+
+  // Provide the expected result in the result variable.
 
   test( "blocks", function () {
 
@@ -731,6 +820,8 @@ $(function () {
   module("JSON");
 
 
+  // Provide the expected result in the result variable.
+
   test( "stringify", function () {
 
     expect(1);
@@ -745,6 +836,8 @@ $(function () {
   });
 
 
+  // Provide the expected result in the result variable.
+
   test( "toJSON", function () {
 
     expect(1);
@@ -756,6 +849,8 @@ $(function () {
     ok ( JSON.stringify(object) == result , "JSON stringified with toJSON" );
   });
 
+
+  // Provide the expected result in the result variable.
 
   test( "parse", function () {
 
