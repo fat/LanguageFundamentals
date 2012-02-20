@@ -534,7 +534,7 @@ $(function () {
     expect(1);
 
     var value = 0;
-    var result = false;
+    var result = 0;
 
     function fn() {
       value = 1;
@@ -564,7 +564,7 @@ $(function () {
     expect(1);
 
     var value = 1;
-    var result = false;
+    var result = 1;
 
     function fn() {
 
@@ -588,7 +588,7 @@ $(function () {
     expect(1);
 
     var value = 1;
-    var result = false;
+    var result = 1;
 
     function fn() {
       value = 10;
@@ -619,7 +619,8 @@ $(function () {
   // Define result as eiher truthy or falsey for each test.
   //
   // NOTE: You'll need to redefine result several times
-  //       throughout this test.
+  //       throughout this test or replace result with
+  //       appropriate variable.
 
   test( "truthy/falsey", function () {
 
@@ -629,7 +630,7 @@ $(function () {
     var falsey = false;
     var result;
 
-    ok ( 0         == result , "is truthy/falsey" );
+    ok ( 0         == falsey , "is truthy/falsey" );
     ok ( ""        == result , "is truthy/falsey" );
     ok ( false     == result , "is truthy/falsey" );
     ok ( 1         == result , "is truthy/falsey" );
