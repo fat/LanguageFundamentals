@@ -15,6 +15,8 @@
 // recollections and hasty (not thorough or detailed) failing unit tests.
 //
 // <3 @fat, a class taught in 2012
+//
+// NOTE: these are the solved tests :P
 
 
 $(function () {
