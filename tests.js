@@ -202,13 +202,13 @@ $(function () {
 
     switch (expression) {
 
-      case label1:
+      case "label1":
         value = value + 1;
 
-      case label2:
+      case "label2":
         value = value + 1;
 
-      case label3:
+      case "label3":
         value = value + 1;
 
       default:
