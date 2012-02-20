@@ -38,7 +38,7 @@ $(function () {
 
     expect(5);
 
-    var array;
+    var array = ["cool", "story", "bro"];
 
     ok ( array instanceof Array , "is an array"              );
     ok ( array[0] === "cool"    , "first value is cool"      );
@@ -55,12 +55,12 @@ $(function () {
 
     expect(4);
 
-    var bool;
+    var bool = true;
 
-    ok ( bool instanceof Boolean , "is a boolean"            );
-    ok ( bool                    , "boolean is truthy"       );
-    ok ( bool == true            , "boolean is still truthy" );
-    ok ( bool === true           , "boolean is true."        );
+    ok ( typeof bool == "boolean" , "is a boolean"            );
+    ok ( bool                     , "boolean is truthy"       );
+    ok ( bool == true             , "boolean is still truthy" );
+    ok ( bool === true            , "boolean is true."        );
 
   });
 
