@@ -107,7 +107,7 @@ $(function () {
 
     var number;
 
-    ok ( typeof number == "Number" , "is a number" );
+    ok ( typeof number == "number" , "is a number" );
     ok ( number                    , "is truthy"   );
     ok ( (number + 5) == 10        , "+5 is 10"    );
 
