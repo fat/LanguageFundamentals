@@ -820,7 +820,7 @@ $(function () {
 
     expect(1);
 
-    var result;
+    var result = 3;
     var value = 0;
 
     if (true) {
@@ -859,9 +859,9 @@ $(function () {
 
     expect(1);
 
-    var result;
+    var result = '{"string":"value","number":3}';
     var object = {};
-    object.string = "new property";
+    object.string = "value";
     object.number = 3;
 
     ok ( JSON.stringify(object) == result , "JSON stringified" );
