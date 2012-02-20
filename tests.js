@@ -57,10 +57,10 @@ $(function () {
 
     var bool;
 
-    ok ( bool instanceof Boolean , "is a boolean"            );
-    ok ( bool                    , "boolean is truthy"       );
-    ok ( bool == true            , "boolean is still truthy" );
-    ok ( bool === true           , "boolean is true."        );
+    ok ( typeof bool == "boolean" , "is a boolean"            );
+    ok ( bool                     , "boolean is truthy"       );
+    ok ( bool == true             , "boolean is still truthy" );
+    ok ( bool === true            , "boolean is true."        );
 
   });
 
