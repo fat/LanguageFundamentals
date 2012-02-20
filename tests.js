@@ -154,7 +154,7 @@ $(function () {
     var string;
 
     ok ( typeof string == "string" , "is a string"     );
-    ok ( string === "(O_O )"       , "matches (O_O  )" );
+    ok ( string === "(O_O )"       , "matches (O_O )" );
 
   });
 
@@ -743,7 +743,7 @@ $(function () {
 
     fn();
 
-    ok ( (property in object) == result , "correct result specified" );
+    ok ( ("property" in object) == result , "correct result specified" );
 
   });
 
