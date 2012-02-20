@@ -229,7 +229,7 @@ $(function () {
 
     expect(4);
 
-    var array = [];
+    var array = [1, 2, 3, 4];
 
     for (var i = 0; i < array.length; i++) {
       ok ( true , "this should be called 4 times" );
@@ -245,7 +245,7 @@ $(function () {
 
     expect(4);
 
-    var value = 0;
+    var value = 4;
 
     while (value && value--) {
       ok ( true , "this should be called 4 times" );
@@ -265,13 +265,17 @@ $(function () {
     expect(4);
 
     var condition = true;
-    var array = [];
+    var array = [1, 2, 3, 4];
 
     for (var i = 0; i < array.length; i++) {
+
+      condition = false;
 
       if (condition) {
         break;
       }
+
+      condition = true;
 
       if (!condition) {
         continue;
@@ -290,9 +294,11 @@ $(function () {
 
     expect(1);
 
-    throw "(╯°□°）╯︵ ┻━┻";
-
-    ok ( true , "this should be called" );
+    try {
+      throw "(╯°□°）╯︵ ┻━┻";
+    } catch (e) {
+      ok ( true , "this should be called" );
+    }
 
   });
 
@@ -307,6 +313,8 @@ $(function () {
     ok ( true , "this should be called" );
     ok ( true , "this should be called" );
 
+    return;
+
     ok ( false , "this should not be called" );
     ok ( false , "this should not be called" );
     ok ( false , "this should not be called" );
@@ -319,11 +327,13 @@ $(function () {
 
   test( "function", function () {
 
-    expect(3);
+    expect(1);
 
-    function fn () {}
+    function fn () {
+      return true;
+    }
 
-    ok ( fn() , "this should be called 3 times" );
+    ok ( fn() , "this should return true" );
 
   });
 
