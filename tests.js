@@ -227,7 +227,7 @@ $(function () {
 
     var array = [];
 
-    for (var i = 0; i < array.length; i++;) {
+    for (var i = 0; i < array.length; i++) {
       ok ( true , "this should be called 4 times" );
     }
 
@@ -263,7 +263,7 @@ $(function () {
     var condition = true;
     var array = [];
 
-    for (var i = 0; i < array.length; i++;) {
+    for (var i = 0; i < array.length; i++) {
 
       if (condition) {
         break;
@@ -354,7 +354,7 @@ $(function () {
     expect(1);
 
     var object = {
-      peropert1: "value"
+      property1: "value",
       property2: "value"
     }
 
@@ -372,7 +372,7 @@ $(function () {
     expect(1);
 
     var object = {
-      property1: "value"
+      property1: "value",
       property2: "value"
     }
 
@@ -688,7 +688,7 @@ $(function () {
     var result;
 
     function each (array, fn) {
-      for (var i = 0, l = array.length; i < l; i++;) {
+      for (var i = 0, l = array.length; i < l; i++) {
         fn(array[i], i);
       }
     }
