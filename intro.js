@@ -173,7 +173,6 @@ $(function () {
   module("Keywords");
 
 
-
   // Modify the condition variable to satisfy the following test.
 
   test( "if/else", function () {
@@ -631,6 +630,9 @@ $(function () {
   // |____/|_|\___/ \___|_|\_\___/
   //
   // JS Functions, Closures, and Blocks
+
+
+  module("Blocks");
 
 
   // Provide the expected result in the result variable.
