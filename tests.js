@@ -602,7 +602,7 @@ $(function () {
 
   test( "truthy/falsey", function () {
 
-    expect(4);
+    expect(12);
 
     var truthy = true;
     var falsey = false;
