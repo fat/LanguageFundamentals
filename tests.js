@@ -434,8 +434,8 @@ $(function () {
       this.color = color;
     }
 
-    ok ( toy1.value == 'red', "different instances" );
-    ok ( toy2.value == 'blue', "different instances" );
+    ok ( toy1.value == 'red'  , "different instances" );
+    ok ( toy2.value == 'blue' , "different instances" );
 
   });
 
@@ -594,44 +594,29 @@ $(function () {
   module("truthy/falsey");
 
 
-  // Define result as eiher truthy or falsey for each test.
-  //
-  // NOTE: You'll need to redefine result several times
-  //       throughout this test or replace result with
-  //       appropriate variable.
+  // For each test replace the `answer` variable
+  // with either truthy or falsey.
 
   test( "truthy/falsey", function () {
 
     expect(12);
 
+    var answer;
     var truthy = true;
     var falsey = false;
-    var result;
 
-    result = 'something';
-    ok ( 0         == result , "is truthy/falsey" );
-    result = 'something';
-    ok ( ""        == result , "is truthy/falsey" );
-    result = 'something';
-    ok ( false     == result , "is truthy/falsey" );
-    result = 'something';
-    ok ( 1         == result , "is truthy/falsey" );
-    result = 'something';
-    ok ( true      == result , "is truthy/falsey" );
-    result = 'something';
-    ok ( (!"")     == result , "is truthy/falsey" );
-    result = 'something';
-    ok ( (!0)      == result , "is truthy/falsey" );
-    result = 'something';
-    ok ( !!-1      == result , "is truthy/falsey" );
-    result = 'something';
-    ok ( !!"false" == result , "is truthy/falsey" );
-    result = 'something';
-    ok ( (!!false) == result , "is truthy/falsey" );
-    result = 'something';
-    ok ( (!!+Date) == result , "is truthy/falsey" );
-    result = 'something';
-    ok ( (!~-1)    == result , "is truthy/falsey" );
+    ok ( 0         == answer , "is truthy/falsey" );
+    ok ( ""        == answer , "is truthy/falsey" );
+    ok ( false     == answer , "is truthy/falsey" );
+    ok ( 1         == answer , "is truthy/falsey" );
+    ok ( true      == answer , "is truthy/falsey" );
+    ok ( (!"")     == answer , "is truthy/falsey" );
+    ok ( (!0)      == answer , "is truthy/falsey" );
+    ok ( !!-1      == answer , "is truthy/falsey" );
+    ok ( !!"false" == answer , "is truthy/falsey" );
+    ok ( (!!false) == answer , "is truthy/falsey" );
+    ok ( (!!+Date) == answer , "is truthy/falsey" );
+    ok ( (!~-1)    == answer , "is truthy/falsey" );
 
   });
 
