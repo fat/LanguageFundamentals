@@ -123,8 +123,8 @@ $(function () {
 
     var object;
 
-    ok ( typeof object == "object" , "is an object"              );
-    ok ( "property" in object      , "has a property 'property'" );
+    ok ( typeof object == "object" , "is an object"           );
+    ok ( "color" in object         , "has a property 'color'" );
 
   });
 
@@ -412,7 +412,7 @@ $(function () {
 
     expect(1);
 
-    var that = this;
+    var that = {};
 
     function fn () {
       ok (this == that, "this == that" );
@@ -427,15 +427,15 @@ $(function () {
 
     expect(2);
 
-    var fn1;
-    var fn2;
+    var toy1;
+    var toy2;
 
-    function Fn (argument) {
-      this.value = argument
+    function Toy (color) {
+      this.color = color;
     }
 
-    ok ( fn1.value == 1, "different instances" );
-    ok ( fn2.value == 2, "different instances" );
+    ok ( toy1.value == 'red', "different instances" );
+    ok ( toy2.value == 'blue', "different instances" );
 
   });
 
@@ -465,7 +465,7 @@ $(function () {
 
     var object = {};
 
-    ok ( "property" in object , "the object's property was declared" );
+    ok ( "color" in object , "the object's 'color' property was declared" );
 
   });
 
@@ -542,7 +542,7 @@ $(function () {
     expect(1);
 
     var value = 1;
-    var result = false;
+    var result = 'the wrong value';
 
     function fn() {
 
@@ -566,7 +566,7 @@ $(function () {
     expect(1);
 
     var value = 1;
-    var result = false;
+    var result = 'the wrong value';
 
     function fn() {
       value = 10;
@@ -608,17 +608,29 @@ $(function () {
     var falsey = false;
     var result;
 
+    result = 'something';
     ok ( 0         == result , "is truthy/falsey" );
+    result = 'something';
     ok ( ""        == result , "is truthy/falsey" );
+    result = 'something';
     ok ( false     == result , "is truthy/falsey" );
+    result = 'something';
     ok ( 1         == result , "is truthy/falsey" );
+    result = 'something';
     ok ( true      == result , "is truthy/falsey" );
+    result = 'something';
     ok ( (!"")     == result , "is truthy/falsey" );
+    result = 'something';
     ok ( (!0)      == result , "is truthy/falsey" );
+    result = 'something';
     ok ( !!-1      == result , "is truthy/falsey" );
+    result = 'something';
     ok ( !!"false" == result , "is truthy/falsey" );
+    result = 'something';
     ok ( (!!false) == result , "is truthy/falsey" );
+    result = 'something';
     ok ( (!!+Date) == result , "is truthy/falsey" );
+    result = 'something';
     ok ( (!~-1)    == result , "is truthy/falsey" );
 
   });
