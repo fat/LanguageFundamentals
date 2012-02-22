@@ -159,6 +159,45 @@ $(function () {
   });
 
 
+  //  _              _   _
+  // | |_ _ __ _   _| |_| |__  _   _ _ __   ___  ___ ___
+  // | __| '__| | | | __| '_ \| | | | '_ \ / _ \/ __/ __|
+  // | |_| |  | |_| | |_| | | | |_| | | | |  __/\__ \__ \
+  //  \__|_|   \__,_|\__|_| |_|\__, |_| |_|\___||___/___/
+  //                           |___/
+  //
+  // Learning true and false. Truthy and Falsey.
+
+
+  module("truthy/falsey");
+
+
+  // For each test replace the `answer` variable
+  // with either truthy or falsey.
+
+  test( "truthy/falsey", function () {
+
+    expect(12);
+
+    var answer;
+    var truthy = true;
+    var falsey = false;
+
+    ok ( 0         == answer , "is truthy/falsey" );
+    ok ( ""        == answer , "is truthy/falsey" );
+    ok ( false     == answer , "is truthy/falsey" );
+    ok ( 1         == answer , "is truthy/falsey" );
+    ok ( true      == answer , "is truthy/falsey" );
+    ok ( (!"")     == answer , "is truthy/falsey" );
+    ok ( (!0)      == answer , "is truthy/falsey" );
+    ok ( !!-1      == answer , "is truthy/falsey" );
+    ok ( !!"false" == answer , "is truthy/falsey" );
+    ok ( (!!false) == answer , "is truthy/falsey" );
+    ok ( (!!+Date) == answer , "is truthy/falsey" );
+    ok ( (!~-1)    == answer , "is truthy/falsey" );
+
+  });
+
 
   //  _  __                                _
   // | |/ /___ _   ___      _____  _ __ __| |___
@@ -577,46 +616,6 @@ $(function () {
     fn();
 
     ok( value === result , "value equals result" );
-
-  })
-
-
-  //  _              _   _
-  // | |_ _ __ _   _| |_| |__  _   _ _ __   ___  ___ ___
-  // | __| '__| | | | __| '_ \| | | | '_ \ / _ \/ __/ __|
-  // | |_| |  | |_| | |_| | | | |_| | | | |  __/\__ \__ \
-  //  \__|_|   \__,_|\__|_| |_|\__, |_| |_|\___||___/___/
-  //                           |___/
-  //
-  // Learning true and false. Truthy and Falsey.
-
-
-  module("truthy/falsey");
-
-
-  // For each test replace the `answer` variable
-  // with either truthy or falsey.
-
-  test( "truthy/falsey", function () {
-
-    expect(12);
-
-    var answer;
-    var truthy = true;
-    var falsey = false;
-
-    ok ( 0         == answer , "is truthy/falsey" );
-    ok ( ""        == answer , "is truthy/falsey" );
-    ok ( false     == answer , "is truthy/falsey" );
-    ok ( 1         == answer , "is truthy/falsey" );
-    ok ( true      == answer , "is truthy/falsey" );
-    ok ( (!"")     == answer , "is truthy/falsey" );
-    ok ( (!0)      == answer , "is truthy/falsey" );
-    ok ( !!-1      == answer , "is truthy/falsey" );
-    ok ( !!"false" == answer , "is truthy/falsey" );
-    ok ( (!!false) == answer , "is truthy/falsey" );
-    ok ( (!!+Date) == answer , "is truthy/falsey" );
-    ok ( (!~-1)    == answer , "is truthy/falsey" );
 
   });
 
