@@ -10,10 +10,28 @@
     |  _| |_| | | | | (_| | (_| | | | | | |  __/ | | | || (_| | \__ \
     |_|  \__,_|_| |_|\__,_|\__,_|_| |_| |_|\___|_| |_|\__\__,_|_|___/
 
+    An introduction to the language of JavaScript by way of vague
+    recollections and hasty (not thorough or detailed) unit tests.
 
-An introduction to the language of JavaScript by way of vague
-recollections and hasty (not thorough or detailed) failing unit tests.
+    <3 @fat, a class taught in 2012
 
-<3 @fat, a class taught in 2012
-
-**NOTE** - this is a work in progress and in no way is *near* final.
+                                        ._
+                                      ,(  `-.
+                                    ,': `.   `.
+          it's a pizza.           ,` *   `-.   \
+                                ,'  ` :+  = `.  `.
+                              ,~  (o):  .,   `.  `.
+                            ,'  ; :   ,(__) x;`.  ;
+                          ,'  :'  itz  ;  ; ; _,-'
+                        .'O ; = _' C ; ;'_,_ ;
+                      ,;  _;   ` : ;'_,-'   i'
+                    ,` `;(_)  0 ; ','       :
+                  .';6     ; ' ,-'~
+                ,' Q  ,& ;',-.'
+              ,( :` ; _,-'~  ;
+            ,~.`c _','
+          .';^_,-' ~
+        ,'_;-''
+       ,,~
+       i'
+       :
