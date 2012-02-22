@@ -149,7 +149,7 @@
 //
 // function arguments
 // function expressions
-// recrusion
+// recursion
 // scope
 // closures
 // blocks
@@ -170,5 +170,5 @@
 // JavaScript object notation
 //
 // stringify
-// toJson
+// toJSON
 // parse
